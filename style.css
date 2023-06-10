@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: #fff6da;
+  overflow-x: hidden;
+}
+
+/* ===== HEADER ==== */
+header {
+  position: relative;
+  top: -1rem;
+  left: 0;
+  width: 100%;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  height: 35px;
+  width: 100px;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -1rem;
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 65px;
+}
+
+header ul li a {
+  text-decoration: none;
+  width: 63px;
+  height: 31px;
+  font-family: "DM Sans", "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  color: #000000;
+}
+
+/* ===== FISRT PAGE  ==== */
+section .intro {
+  font-family: "DM Sans", "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.spancolor {
+  color: #fc6b3f;
+}
+
+.main {
+  margin-top: -2rem;
+  left: 0;
+  width: 100%;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  text-align: center;
+}
+
+section .shoes {
+  width: 800px;
+  height: 500px;
+  margin-right: -5rem;
+}
+
+.btn {
+  padding: 22px 22px;
+  color: white;
+  display: inline-block;
+  white-space: nowrap;
+  border: none;
+  background: #fc6b3f;
+  text-decoration: none;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 29px;
+  width: 190px;
+  height: 67px;
+  border-radius: 11px;
+  position: absolute;
+  left: 45rem;
+  top: 45rem;
+}
+
+/*.details {
+  background: linear-gradient(180deg, #fff6da 0%, white 100%);
+}*/
+
+.details img.divider {
+  position: absolute;
+  width: 1581px;
+  height: 30px;
+  left: 0px;
+  top: 53rem;
+}
+
+/* ===== SECOND PAGE  ==== */
+.shoe {
+  position: absolute;
+  width: 450px;
+  height: 420px;
+  margin-top: -26rem;
+  left: 37rem;
+}
+
+.details p {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 29px;
+  line-height: 31px;
+  text-align: center;
+  margin-top: 45rem;
+  line-height: 2.4rem;
+}
+
+.service .container {
+  padding-bottom: 40px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 3rem;
+}
+
+.service .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service .carddetails {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 15px;
+  display: flex;
+  align-items: stretch;
+}
+
+.service .carddetails .cardshoes {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 15px;
+  text-align: center;
+  position: relative;
+}
+
+.service .carddetails .cardshoes::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fc6b3f;
+}
+.service .carddetails .cardshoes:hover {
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.service .carddetails .cardshoes h4 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.service .carddetails .cardshoes p {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.carddiv {
+  margin-top: 5rem;
+  width: 1581px;
+  height: 30px;
+}
+
+/* ===== THIRD PAGE  ==== */
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.reviews h2 {
+  font-family: "DM Sans", "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 29px;
+  margin-top: 2rem;
+}
+
+.person {
+  margin-left: -15rem;
+  margin-right: 3rem;
+}
+
+.reviewdetails {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.reviewdetails .comments .quote {
+  color: #fc6b3f;
+  font-size: 50px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.personname {
+  color: #655d5d9e;
+  margin-top: -4.5rem;
+  font-size: 10px;
+  font-weight: 100;
+  font-family: "DM Sans", "Poppins";
+}
+
+.review .container {
+  padding-bottom: 40px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 3rem;
+}
+
+.review .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.review .reviewdetails {
+  flex: 0 0 45%;
+  max-width: 45%;
+  padding: 15px;
+  display: flex;
+  align-items: stretch;
+}
+
+.review .reviewdetails .comments {
+  background-color: white;
+  border-radius: 10px;
+  padding: 50px 50px;
+  text-align: center;
+  position: relative;
+  height: 18rem;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.review .reviewdetails .comments::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fc6b3f;
+}
+
+.review .reviewdetails .comments:hover {
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.review .reviewdetails .comments h4 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.review .reviewdetails .comments p {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.btnreview {
+  padding: 22px 22px;
+  color: white;
+  display: inline-block;
+  white-space: nowrap;
+  border: none;
+  background: #fc6b3f;
+  text-decoration: none;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 29px;
+  width: 240px;
+  height: 67px;
+  border-radius: 11px;
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+
+.queries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.comments p::before {
+    content: "\201C";
+    color: #fc6b3f;
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  flex: 0 0 50%;
+}
+
+.pic3 {
+  width: 15rem;
+}
+
+.greenline {
+  margin-top: 5rem;
+  width: 1581px;
+}
+
+/* ===== FOURTH PAGE  ==== */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.contact .column {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.contact img {
+  width: 7rem;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.contact p {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btncontact {
+  padding: 22px 22px;
+  color: white;
+  display: inline-block;
+  white-space: nowrap;
+  border: none;
+  background: #fc6b3f;
+  text-decoration: none;
+  font-family: "DM Sans", "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 29px;
+  width: 370px;
+  height: 67px;
+  border-radius: 11px;
+}
+
+.contact .btncontact i {
+  margin-right: 10px;
+}
+
+/* ===== FOOTER  ==== */
+.footer {
+  margin-top: 7rem;
+  background-color: #262525;
+  color: #fc6b3f;
+  padding: 3rem 3rem;
+}
+.footerimg {
+  height: 50px;
+  width: 150px;
+}
+
+.footer h2 {
+  margin-top: 2rem;
+}
+.footer p {
+  font-size: 19px;
+  font-family: 400;
+}
+
