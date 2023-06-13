@@ -54,6 +54,82 @@ header ul li a {
   color: #000000;
 }
 
+/* -----hamburger------------ */
+
+.hamburger {
+  position: absolute;
+  left: 40rem;
+  top: 2rem;
+  width: 5rem;
+  height: 3rem;
+  display: none;
+  z-index: 1000;
+  cursor: pointer;
+  position: fixed;
+}
+
+.hidden {
+  display: none;
+}
+
+.close-button {
+  position: absolute;
+  left: 40rem;
+  top: 2rem;
+  width: 3rem;
+  height: 3rem;
+  display: none;
+  z-index: 1000;
+  cursor: pointer;
+  position: fixed;
+}
+
+.hidden {
+  display: none;
+}
+
+#expend {
+  height: 500px;
+  width: 60%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff6da;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 10s;
+  text-align: center;
+  border: 2px solid pink;
+}
+
+#expend ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  opacity: 0;
+}
+
+#expend ul li {
+  font-size: 2.4rem;
+  line-height: 5rem;
+  cursor: pointer;
+  color: #fc6b3f;
+}
+
+#expend ul li:hover {
+  background-color: #ffffff;
+}
+
 /* ===== FISRT PAGE  ==== */
 section .intro {
   font-family: "DM Sans", "Poppins";
@@ -74,7 +150,7 @@ section .intro {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 10000;
+
   text-align: center;
 }
 
@@ -100,20 +176,18 @@ section .shoes {
   width: 190px;
   height: 67px;
   border-radius: 11px;
+  border-radius: 11px;
+  margin-left: 2rem;
   position: absolute;
   left: 45rem;
   top: 45rem;
 }
 
-/*.details {
-  background: linear-gradient(180deg, #fff6da 0%, white 100%);
-}*/
-
 .details img.divider {
   position: absolute;
-  width: 1581px;
+  /*width: 1581px;*/
   height: 30px;
-  left: 0px;
+  /*left: -10px;*/
   top: 53rem;
 }
 
@@ -122,8 +196,9 @@ section .shoes {
   position: absolute;
   width: 450px;
   height: 420px;
+  align-items: center;
   margin-top: -26rem;
-  left: 37rem;
+  left: 30rem;
 }
 
 .details p {
@@ -192,8 +267,12 @@ section .shoes {
 
 .carddiv {
   margin-top: 5rem;
-  width: 1581px;
+  /*width: 1581px;*/
   height: 30px;
+}
+
+#service {
+  background: linear-gradient(to bottom, #fff6da, white);
 }
 
 /* ===== THIRD PAGE  ==== */
@@ -217,6 +296,7 @@ section .shoes {
 .person {
   margin-left: -15rem;
   margin-right: 3rem;
+  width: 5.2rem;
 }
 
 .reviewdetails {
@@ -329,10 +409,10 @@ section .shoes {
 }
 
 .comments p::before {
-    content: "\201C";
-    color: #fc6b3f;
-    font-size: 2.5rem;
-    margin-right: 1rem;
+  content: "\201C";
+  color: #fc6b3f;
+  font-size: 2.5rem;
+  margin-right: 1rem;
 }
 
 .row {
@@ -350,7 +430,7 @@ section .shoes {
 
 .greenline {
   margin-top: 5rem;
-  width: 1581px;
+  /*width: 1581px;*/
 }
 
 /* ===== FOURTH PAGE  ==== */
@@ -418,7 +498,11 @@ section .shoes {
   background-color: #262525;
   color: #fc6b3f;
   padding: 3rem 3rem;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
+
 .footerimg {
   height: 50px;
   width: 150px;
@@ -430,5 +514,139 @@ section .shoes {
 .footer p {
   font-size: 19px;
   font-family: 400;
+}
+
+/* Media Queries */
+@media (max-width: 1137px) {
+  .shoe {
+    margin-left: -10rem;
+  }
+
+  .review .reviewdetails .comments {
+    height: 20rem;
+  }
+
+  .review .reviewdetails .comments p {
+    font-size: 16px;
+  }
+
+  .person {
+    margin-right: -1rem;
+    width: 4rem;
+  }
+  .personname {
+    margin-top: -3rem;
+  }
+}
+
+@media (max-width: 1005px) {
+  section .intro {
+    font-size: 20px;
+  }
+
+  section .shoes {
+    width: 600px;
+    height: 400px;
+  }
+
+  .btn {
+    font-weight: 100;
+    font-size: 29px;
+    margin-left: -19rem;
+  }
+
+  .main {
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .review .reviewdetails .comments {
+    height: 23rem;
+
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  header ul li a {
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+  }
+
+  header ul li {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 850px) {
+  .person {
+    margin-right: -5rem;
+    width: 3rem;
+  }
+
+  .personname {
+    margin-right: -3rem;
+  }
+
+  .review .reviewdetails .comments p {
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .container .carddetails,
+  .container .reviewdetails {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .btn {
+    margin-left: -27rem;
+  }
+
+  .review .reviewdetails .comments p {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    margin-bottom: 3rem;
+  }
+
+  .review .reviewdetails .comments {
+    height: 20rem;
+  }
+
+  .shoe {
+    margin-left: -23rem;
+    width: 410px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  header ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  #expend ul {
+    opacity: 1 !important;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #expend {
+    height: 850px;
+  }
 }
 
